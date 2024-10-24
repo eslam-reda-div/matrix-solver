@@ -45,7 +45,7 @@ const Matrix: React.FC = () => {
       <div className="p-6">
         <div className="flex justify-center items-center gap-0">
           <MatrixBracket type="left" />
-          <div className="px-2">
+            <div className="px-2 overflow-auto [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
             <table className="border-collapse">
               <tbody>
                 {matrix.map((row, rowIndex) => (
